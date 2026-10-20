@@ -7,44 +7,6 @@ Welcome to my personal portfolio! I am a Computer Science Engineering student an
 🔗 **Portfolio:** https://my-portfolio-pwna.onrender.com/
 
 
-## 👩‍💻 About Me
-
-- 🎓 Computer Science Engineering Student
-- 🤖 Interested in Data Science, Machine Learning, Artificial Intelligence, and Deep Learning
-- 📊 Passionate about building intelligent, data-driven applications
-- 💡 Continuously learning and developing practical projects
-
-## 🛠️ Tech Stack
-
-- **Languages:** Python, Java
-- **Web Development:** HTML, CSS, JavaScript, Flask
-- **Data Science & AI:** Machine Learning, Deep Learning, NLP
-- **Database:** SQLite
-- **Tools:** Git, GitHub
-
-## 🚀 Featured Projects
-
-### 1. Anomalous User Detection
-A machine learning project focused on identifying potentially anomalous user activity.
-
-🔗 GitHub: https://github.com/sakshiipandey/anomalous-user-detection
-
-### 2. Zepto Support Assistant
-A GenAI-based support assistant using Retrieval-Augmented Generation (RAG) to answer questions using support documentation.
-
-🔗 GitHub: https://github.com/sakshiipandey/zepto-support-assistant
-
-### 3. Heart Disease Prediction
-A machine learning project focused on predicting potential heart disease using health-related features.
-
-### 4. Plant Disease Detection
-An AI-based project for detecting plant diseases from images.
-
-### 5. AI Text Summarizer
-An NLP project designed to generate concise summaries of text.
-
-### 6. Snake Game Using Reinforcement Learning
-A reinforcement learning project exploring how an agent can learn to play the Snake game.
 
 ## ✨ Portfolio Features
 
@@ -55,14 +17,6 @@ A reinforcement learning project exploring how an agent can learn to play the Sn
 - Admin login and project management dashboard
 - Responsive user interface
 
-## 💻 Technologies Used
-
-- Python
-- Flask
-- HTML5
-- CSS3
-- JavaScript
-- SQLite
 
 ## 📂 Project Structure
 
