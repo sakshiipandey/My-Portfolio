@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login | Sakshi</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="admin-body">
+
+<div class="login-wrap">
+
+    <a href="{{ url_for('home') }}" class="brand">
+        Sakshi<span>.</span>
+    </a>
+
+    <div class="admin-panel login-panel">
+
+        <p class="eyebrow">PRIVATE AREA</p>
+
+        <h1>Admin <span>Login</span></h1>
+
+        <p class="muted">
+            This dashboard is only for the portfolio owner.
+        </p>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% for category, message in messages %}
+                <div class="flash {{ category }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endwith %}
+
+        <form method="POST" class="admin-form">
+
+            <input type="hidden"
+                   name="_csrf_token"
+                   value="{{ csrf_token() }}">
+
+            <label>
+                Username
+                <input type="text"
+                       name="username"
+                       autocomplete="username"
+                       required>
+            </label>
+
+            <label>
+                Password
+                <input type="password"
+                       name="password"
+                       autocomplete="current-password"
+                       required>
+            </label>
+
+            <button type="submit" class="button primary full-width">
+                Login
+            </button>
+
+        </form>
+
+        <a href="{{ url_for('home') }}" class="back-link">
+            ← Back to Portfolio
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

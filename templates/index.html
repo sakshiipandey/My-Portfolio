@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Sakshi Pandey">
+    <meta name="description"
+        content="Sakshi Pandey's portfolio in Data Science, Machine Learning and Artificial Intelligence.">
+
+    <meta name="theme-color" content="#090b10">
+
+    <title>Sakshi Pandey | Data Science & Machine Learning</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <a href="#home" class="logo">Sakshi<span>.</span></a>
+
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Toggle navigation"
+                aria-controls="nav-links" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HOME -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+
+                <div class="hero-content">
+                    <p class="eyebrow">HELLO, I'M SAKSHI PANDEY</p>
+
+                    <h1>
+                        Data Science &
+                        <span>Machine Learning</span>
+                        Enthusiast
+                    </h1>
+
+                    <p class="hero-description">
+                        I'm a Computer Science Engineering student interested in
+                        Data Science, Machine Learning and Artificial Intelligence.
+                        I enjoy building data-driven applications and exploring
+                        practical solutions to real-world problems.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            Explore My Work ↗
+                        </a>
+
+                        <a href="{{ url_for('static', filename='documents/resume.pdf') }}" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-outline">
+                            View Resume
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com/sakshiipandey" target="_blank" rel="noopener noreferrer">GitHub
+                            ↗</a>
+
+                        <a href="https://linkedin.com/in/sakshi-pandey-a6077735b" target="_blank"
+                            rel="noopener noreferrer">LinkedIn ↗</a>
+
+                        <a href="mailto:16sakshy@gmail.com">Email ↗</a>
+                    </div>
+                </div>
+
+                <!-- PROFILE PHOTO -->
+                <div class="hero-profile">
+                    <div class="profile-card">
+
+                        <div class="profile-photo">
+                            <img src="{{ url_for('static', filename='images/profile.jpeg') }}" alt="Sakshi Pandey">
+                        </div>
+                        <p class="eyebrow">COMPUTER SCIENCE</p>
+                        <h2>Sakshi Pandey</h2>
+
+                        <p>Data Science & Machine Learning</p>
+
+                        <div class="profile-divider"></div>
+
+                        <div class="profile-detail">
+                            <span>Programming</span>
+                            <strong>Python · Java</strong>
+                        </div>
+
+                        <div class="profile-detail">
+                            <span>Areas of Interest</span>
+                            <strong>AI · ML · Data Science</strong>
+                        </div>
+
+                        <div class="profile-detail">
+                            <span>Current Focus</span>
+                            <strong>Learning through Projects</strong>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">GET TO KNOW ME</p>
+                    <h2>About Me</h2>
+                    <p>My background, interests and the areas I'm exploring.</p>
+                </div>
+
+                <div class="about-content">
+
+                    <div class="about-text">
+                        <p>
+                            I am a third-year Computer Science Engineering student
+                            with a strong interest in Data Science, Machine Learning
+                            and Artificial Intelligence.
+                        </p>
+
+                        <p>
+                            I enjoy working with data, understanding algorithms
+                            and building applications that apply machine learning
+                            techniques to practical problems.
+                        </p>
+
+                        <p>
+                            Through personal projects, I am developing my
+                            programming, analytical thinking and problem-solving
+                            skills while continuously exploring new technologies.
+                        </p>
+                    </div>
+
+                    <div class="about-highlights">
+
+                        <article class="highlight-card">
+                            <span class="highlight-number">01</span>
+                            <h3>Data Science</h3>
+                            <p>Analysing data, preprocessing datasets and discovering useful patterns.</p>
+                        </article>
+
+                        <article class="highlight-card">
+                            <span class="highlight-number">02</span>
+                            <h3>Machine Learning</h3>
+                            <p>Building and evaluating predictive models using data.</p>
+                        </article>
+
+                        <article class="highlight-card">
+                            <span class="highlight-number">03</span>
+                            <h3>Artificial Intelligence</h3>
+                            <p>Exploring AI, neural networks and intelligent solutions to real-world problems.</p>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- EDUCATION -->
+        <section id="education" class="section section-muted">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">MY BACKGROUND</p>
+                    <h2>Education</h2>
+                    <p>My academic journey in Computer Science and Engineering.</p>
+                </div>
+
+                <article class="education-card">
+                    <div class="education-marker">B.Tech</div>
+
+                    <div class="education-details">
+                        <h3>Bachelor of Technology</h3>
+                        <p class="education-field">Computer Science and Engineering</p>
+                        <p class="education-period">2024 – 2028</p>
+                        <p>
+                            Currently pursuing undergraduate studies with a focus
+                            on programming, data science, machine learning and
+                            artificial intelligence.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">WHAT I WORK WITH</p>
+                    <h2>Technical Skills</h2>
+                    <p>Tools and technical concepts used in my learning and projects.</p>
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+                        <div class="skill-icon">01</div>
+                        <h3>Programming</h3>
+                        <div class="skill-tags">
+                            <span>Python</span><span>Java</span><span>SQL</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">02</div>
+                        <h3>Data Science</h3>
+                        <div class="skill-tags">
+                            <span>NumPy</span><span>Pandas</span>
+                            <span>Data Analysis</span><span>Visualization</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">03</div>
+                        <h3>Machine Learning</h3>
+                        <div class="skill-tags">
+                            <span>Scikit-learn</span><span>Classification</span>
+                            <span>Model Evaluation</span><span>XGBoost</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">04</div>
+                        <h3>AI & Deep Learning</h3>
+                        <div class="skill-tags">
+                            <span>NLP</span><span>Neural Networks</span><span>LLMs</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">05</div>
+                        <h3>Web Technologies</h3>
+                        <div class="skill-tags">
+                            <span>HTML</span><span>CSS</span>
+                            <span>JavaScript</span><span>Flask</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">06</div>
+                        <h3>Tools & Technologies</h3>
+                        <div class="skill-tags">
+                            <span>Git</span><span>GitHub</span>
+                            <span>Jupyter Notebook</span><span>VS Code</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section section-muted">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">SELECTED WORK</p>
+                    <h2>Projects</h2>
+                    <p>
+                        Projects exploring machine learning, predictive analytics,
+                        natural language processing and AI.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+
+                    {% for project in projects %}
+
+                    <article class="project-card">
+
+                        <div class="project-top">
+                            <span class="project-category">
+                                {{ project['tech'] or 'PROJECT' }}
+                            </span>
+
+                            <span class="project-number">
+                                {{ "%02d"|format(loop.index) }}
+                            </span>
+                        </div>
+
+                        <h3>{{ project['title'] }}</h3>
+
+                        <p>{{ project['description'] }}</p>
+
+                        {% if project['image_url'] %}
+                        <img src="{{ project['image_url'] }}" alt="{{ project['title'] }}" loading="lazy"
+                            style="max-width:100%; border-radius:12px;">
+                        {% endif %}
+
+                        {% if project['tech'] %}
+                        <div class="project-tags">
+                            {% for technology in project['tech'].split(',') %}
+                            <span>{{ technology.strip() }}</span>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+
+                        <div class="project-links">
+
+                            {% if project['github_url'] %}
+                            <a href="{{ project['github_url'] }}" target="_blank" rel="noopener noreferrer"
+                                class="project-link">
+                                GitHub ↗
+                            </a>
+                            {% endif %}
+
+                            {% if project['live_url'] %}
+                            <a href="{{ project['live_url'] }}" target="_blank" rel="noopener noreferrer"
+                                class="project-link live-link">
+                                Live Demo ↗
+                            </a>
+                            {% endif %}
+
+                        </div>
+
+                    </article>
+
+                    {% else %}
+
+                    <p>
+                        Projects will appear here soon.
+                    </p>
+
+                    {% endfor %}
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- RESUME -->
+        <section id="resume" class="section">
+            <div class="container">
+
+                <div class="resume-card">
+                    <div class="resume-content">
+                        <p class="eyebrow">MY RESUME</p>
+                        <h2>Interested in my journey?</h2>
+
+                        <p>
+                            Explore my education, technical skills and project
+                            experience in my resume.
+                        </p>
+
+                        <div class="resume-buttons">
+                            <a href="{{ url_for('static', filename='documents/resume.pdf') }}" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-primary">View Resume ↗</a>
+
+                            <a href="{{ url_for('static', filename='documents/resume.pdf') }}" download
+                                class="btn btn-outline">Download Resume ↓</a>
+                        </div>
+                    </div>
+
+                    <div class="resume-symbol">PDF</div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CONTACT -->
+        <section id="contact" class="section section-muted">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">LET'S CONNECT</p>
+                    <h2>Contact Me</h2>
+                    <p>Feel free to connect with me about projects and opportunities.</p>
+                </div>
+
+                <div class="contact-details">
+
+                    <a href="mailto:16sakshy@gmail.com" class="contact-card">
+                        <span class="contact-label">EMAIL</span>
+                        <h3>Send an Email</h3>
+                        <p>16sakshy@gmail.com</p>
+                        <span class="contact-arrow">↗</span>
+                    </a>
+
+                    <a href="https://github.com/sakshiipandey" target="_blank" rel="noopener noreferrer"
+                        class="contact-card">
+                        <span class="contact-label">GITHUB</span>
+                        <h3>Explore My Code</h3>
+                        <p>Projects, code and repositories</p>
+                        <span class="contact-arrow">↗</span>
+                    </a>
+
+                    <a href="https://linkedin.com/in/sakshi-pandey-a6077735b" target="_blank" rel="noopener noreferrer"
+                        class="contact-card">
+                        <span class="contact-label">LINKEDIN</span>
+                        <h3>Connect Professionally</h3>
+                        <p>Professional profile and updates</p>
+                        <span class="contact-arrow">↗</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-main">
+
+                <div class="footer-brand">
+                    <a href="#home" class="logo">Sakshi<span>.</span></a>
+                    <p>
+                        Exploring data. Building solutions.
+                        Learning something new every day.
+                    </p>
+                </div>
+
+                <div class="footer-navigation">
+                    <h3>Quick Links</h3>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#resume">Resume</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <div class="footer-connect">
+                    <h3>Connect</h3>
+                    <a href="mailto:16sakshy@gmail.com">Email ↗</a>
+                    <a href="https://github.com/sakshiipandey" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                    <a href="https://linkedin.com/in/sakshi-pandey-a6077735b" target="_blank"
+                        rel="noopener noreferrer">LinkedIn ↗</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="current-year"></span> Sakshi Pandey. All rights reserved.</p>
+                <a href="#home" class="back-to-top">Back to top ↑</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
