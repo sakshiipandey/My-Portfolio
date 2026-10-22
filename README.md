@@ -4,7 +4,7 @@ Welcome to my personal portfolio! I am a Computer Science Engineering student an
 
 ## 🌐 Live Website
 
-🔗 **Portfolio:** https://my-portfolio-pwna.onrender.com/
+🔗 **Portfolio:** https://my-portfolio-fbeo.onrender.com
 
 
 
